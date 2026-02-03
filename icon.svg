@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Pill Tracker">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f0e2" />
+      <stop offset="100%" stop-color="#ede3d2" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)" />
+  <rect x="116" y="156" width="280" height="200" rx="100" fill="#d97b4d" />
+  <rect x="116" y="156" width="140" height="200" rx="100" fill="#f7f3ea" />
+  <line x1="256" y1="176" x2="256" y2="336" stroke="#b35f36" stroke-width="10" />
+</svg>

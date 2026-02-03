@@ -1,0 +1,15 @@
+{
+  "name": "Pill Tracker",
+  "short_name": "Pill Tracker",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f3ea",
+  "theme_color": "#d97b4d",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

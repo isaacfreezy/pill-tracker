@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pill Tracker</title>
+    <meta name="theme-color" content="#d97b4d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Pill Tracker</h1>
+        <p class="subtitle">Tracks morning and night doses. Day resets at 3:00 AM.</p>
+      </header>
+
+      <section class="status" aria-live="polite">
+        <div class="status-row">
+          <span class="label">Tracking day:</span>
+          <span id="day-label" class="value">—</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Current streak:</span>
+          <span id="streak-count" class="value">—</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Next reset:</span>
+          <span id="next-reset" class="value">—</span>
+        </div>
+      </section>
+
+      <section class="cards">
+        <button id="morning-btn" class="card" type="button" aria-pressed="false">
+          <div class="card-title">Morning</div>
+          <div id="morning-status" class="card-status">Not taken</div>
+          <div class="card-time" id="morning-time">—</div>
+        </button>
+
+        <button id="night-btn" class="card" type="button" aria-pressed="false">
+          <div class="card-title">Night</div>
+          <div id="night-status" class="card-status">Not taken</div>
+          <div class="card-time" id="night-time">—</div>
+        </button>
+      </section>
+
+      <section class="actions">
+        <button id="clear-btn" type="button" class="secondary">Clear today</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
